@@ -6,10 +6,7 @@ function App() {
 
   const [clicks, setClicks] = useState(0);
 
-  const addClick = () => {
-    let newClicks = (clicks + 1)
-    setClicks(newClicks)
-  };
+  const addClick = () => setClicks(clicks + 1);
 
   return (
     <div className="App">
