@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect} from 'react';
+import { useState} from 'react';
 
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
   const [clicks, setClicks] = useState(0);
 
   const addClick = () => {
-    console.log("Button was clicked")
+    let newClicks = (clicks + 1)
+    setClicks(newClicks)
   };
 
   return (
